@@ -45,7 +45,7 @@ Let's go back to our home directory:
 
     $ cd ../
     
-`../` just means "go up one level."
+`../` just means "go up one level." You can go up two levels by going `../../`, and so on. `../` is a relative path.
 
 # Install ALL THE THINGS:
 
@@ -63,6 +63,6 @@ Homebrew is a package manager--basically an app store for the terminal. It helps
 
 ###Virtuanenv and Virtualenv Wrapper
 
-Virtualenv helps us isolate our dev environments from each other.
+Virtualenv is a way of managing 'dependencies,' or programs we need to make our program run. Dependencies are usually packages we download through the package manager. Packages usually come in multiple versions, and they may have their own dependencies, which also come in multiple versions. Sometimes, you'll be working on different projects that need different versions of the same package. In order to make sure that each project has access to the dependencies it needs without affecting any other project, we isolate them from each other.
 
 $ pip install virtualenvwrapper

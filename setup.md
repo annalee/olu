@@ -134,5 +134,9 @@ But we actually want to be in our virtualenv right now. Once the virtualenv has 
 
 You should see that `(learn)` in front of your prompt again.
 
-    
+# Ready!
+
+We're done with setup! The good news is, from here on out, all we'll have to do is `workon learn` to get started (and `deactivate`) to stop.
+
+It's time for us to start coding!
 

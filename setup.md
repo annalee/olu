@@ -85,4 +85,4 @@ Now we need to restart Finder:
     
 Now if you open finder and go to your home directory, you'll see a lot of grey files with names that start with `.`. Find `.bash_profile` and open it in a text editor.
 
-> TIP: text editors are not the same as word processors. Word processors, like MS Word or LibreOffice, use a markup language to make documents pretty for printing and viewing. Computers can't read code that includes this kind of formatting. We need to use a program that's specifically for writing code. I recommend [Sublime Text[(https://www.sublimetext.com/).
+> TIP: text editors are not the same as word processors. Word processors, like MS Word or LibreOffice, use a markup language to make documents pretty for printing and viewing. Computers can't read code that includes this kind of formatting. We need to use a program that's specifically for writing code. I recommend [Sublime Text](https://www.sublimetext.com/).

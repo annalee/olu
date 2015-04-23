@@ -65,4 +65,24 @@ Homebrew is a package manager--basically an app store for the terminal. It helps
 
 Virtualenv is a way of managing 'dependencies,' or programs we need to make our program run. Dependencies are usually packages we download through the package manager. Packages usually come in multiple versions, and they may have their own dependencies, which also come in multiple versions. Sometimes, you'll be working on different projects that need different versions of the same package. In order to make sure that each project has access to the dependencies it needs without affecting any other project, we isolate them from each other.
 
-$ pip install virtualenvwrapper
+You can think of virtual environments like fish tanks. They allow you to keep saltwater and freshwater fish in different tanks, so they don't have to share the same water. (Your code projects are fish).
+
+    $ pip install virtualenv
+    
+Virtualenv is really handy, but it's not even a little bit user-friendly. It's so unfriendly, actually, that there's a whole separate tool to give us a set of convenient commands to run virtual environments. It's called virtualenvwrapper. Let's install that:
+
+    $ pip install virtualenvwrapper
+    
+Now we need to do a little bit of setup for virtualenvwrapper to give us access to its commands.
+
+To do this, we need to access  file called `.bash_profile`. The challenge is that bash_profile is a *hidden file* (which is why it starts with `.`), so before we can edit it, we need to be able to view it. To do that, we need to tell our system to show us hidden files. Here's the command for that:
+
+    $ defaults write com.apple.finder AppleShowAllFiles YES
+    
+Now we need to restart Finder:
+
+    $ killall Finder
+    
+Now if you open finder and go to your home directory, you'll see a lot of grey files with names that start with `.`. Find `.bash_profile` and open it in a text editor.
+
+> TIP: text editors are not the same as word processors. Word processors, like MS Word or LibreOffice, use a markup language to make documents pretty for printing and viewing. Computers can't read code that includes this kind of formatting. We need to use a program that's specifically for writing code.

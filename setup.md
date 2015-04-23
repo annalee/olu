@@ -114,7 +114,7 @@ That should be everything we need to set up! We're almost ready to code.
 
 Before we can start coding, we need to start a new virtualenv to hold any python packages we want to install. We do that with this command:
 
-    $ mkvirtualenv learn
+    $ mkvirtualenv -p /usr/local/bin/python3 learn
     
 That tells the computer "make a virtualenv called learn." You should see something like this:
 
@@ -132,7 +132,11 @@ But we actually want to be in our virtualenv right now. Once the virtualenv has 
 
     $ workon learn
 
-You should see that `(learn)` in front of your prompt again.
+You should see that `(learn)` in front of your prompt again. There's just one more piece of setup to go:
+
+    $ pip install ipython
+
+`pip` is the Python package manager, and this command installs the `ipython` package, which we will use as our primary Python command-line prompt.
 
 # Ready!
 

@@ -1,3 +1,15 @@
+#!runscript
+
+# Let's print our starburst flavors!
+flavors = ["cherry", "orange", "strawberry", "lemon", "apple"]
+
+for flavor in flavors:
+    print(flavor + " is a starburst flavor.")
+
+######################
+# 99 Bottles of Beer #
+######################
+
 # Using a for loop like we just did to print starburst flavors, we're going to
 # print the full lyrics to 99 Bottles of Beer.
 

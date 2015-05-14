@@ -63,7 +63,7 @@ bottles_lyrics()
 # acts on those objects and *returns* a result. Let's rewrite bottles_lyrics()
 # so that it takes the number of bottles as an argument:
 
-def bottles_lyrics2(bottlecount):
+def bottles_lyrics2(bottle):
     # because we're 'passing in' bottlecount as an argument,
     # we no longer need to define it inside the function.
 

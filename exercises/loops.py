@@ -78,12 +78,11 @@ def bottles_lyrics2(bottlecount):
 # We call the function with the argument like this:
 bottles_lyrics2(99)
 
-# Let's add a default value, so that if someone doesn't include an argument when
-# they call the function, it assumes they want 99:
+# Let's add a default value!
 
 def bottles_lyrics3(bottlecount = 99):
-    # because we're 'passing in' bottlecount as an argument,
-    # we no longer need to define it inside the function.
+    # now, if someone doesn't include a number when they call the function,
+    # the function will assume they want 99 bottles.
 
     while bottle > 0:
         print(str(bottle) + " bottles of beer on the wall,")
@@ -104,7 +103,6 @@ bottles = range(99, 0, -1)
 # is -1). This brings us back to the for loop:
 
 def bottles_lyrics4(bottlecount = 99):
-    # loop the list to print the lyrics:
     for bottle in range(bottlecount, 0, -1):
         print(str(bottle) + " bottles of beer on the wall,")
         print(str(bottle) + " bottles of beer,")
